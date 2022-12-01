@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
@@ -75,7 +76,7 @@ header h1 {
     transition: .5s;
 }
 
-.input-container button {
+.input-container button, button {
     padding: .5rem;
     background: #FFFF;
     outline: none;
@@ -90,7 +91,7 @@ header h1 {
     rotate: 10deg;
 }
 
-.input-container button:hover {
+.input-container button:hover, button:hover {
     transform: scale(115%);
     opacity: 100%;
     transition: .5s;
