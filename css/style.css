@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat&display=swap');
+
+/* Global attributes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 21, 21, 0.747);
+    font-family: 'Gochi Hand', cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem
+}
+
+header img {
+    margin-top: 1.5rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+header h1 {
+    background-color: #92E3A9;
+    padding: .6rem;
+    border-radius: 10px;
+}
+
+/* Main content */
+
+#main-container {
+    display: block;
+    margin: 0 auto;
+    height: 75vh;
+    width: 50%;
+    background-color: #FFFF;
+    border-radius: 13px;
+}
+
+#main-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+#main-sec label {
+    font-size: 1.7rem;
+}
+
+/* Inputs and buttons */
+
+.input-container input[type="text"] {
+    padding: .5rem;
+    outline: none;
+    border: rgb(250, 163, 177) 1px solid;
+    border-radius: 5px;
+    font-family: 'Gochi Hand', cursive;
+    opacity: 40%;
+    transition: .5s;
+}
+
+.input-container input[type="text"]:focus {
+    opacity: 100%;
+    transition: .5s;
+}
+
+.input-container button {
+    padding: .5rem;
+    background: #FFFF;
+    outline: none;
+    border: 1px solid rgb(48, 47, 47);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Gochi Hand', cursive;
+    box-shadow: 3px 3px 2px #92E3A9;
+    margin-left: .9rem;
+    opacity: 40%;
+    transition: .5s;
+    rotate: 10deg;
+}
+
+.input-container button:hover {
+    transform: scale(115%);
+    opacity: 100%;
+    transition: .5s;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 950px) {
+    #main-container {
+        width: 80%;
+        height: 100%;
+        margin-top: 7rem;
+    }
+
+    #main-container h1 {
+        position: relative;
+        right: 1.2rem;
+    }
+
+    #main-container img {
+        width: 140px;
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #main-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #main-container img {
+        display: none;
+    }
+
+    #main-container header h1 {
+        margin: 1rem 0 0 1.5rem;
+        width: 80vw;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <main id="main-container">
+      <header>
+        <img src="animacao.svg" alt="header-image" id="header-image" />
+        <h1>Anote suas tarefas!</h1>
+      </header>
+
+      <section id="main-sec">
+        <label for="note-input">-Hoje eu preciso... - </label>
+        <div class="input-container">
+          <input
+            type="text"
+            name="note-input"
+            id="note-input"
+            placeholder="Digite aqui"
+          />
+          <button type="submit" id="submit-button" onclick="createTodo()">
+            Enviar
+          </button>
+        </div>
+
+        <ul id="content-list">
+          
+        </ul>
+      </section>
+    </main>
+
+    <footer>&copy;Floowzera</footer>
+
+    <script src="/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
